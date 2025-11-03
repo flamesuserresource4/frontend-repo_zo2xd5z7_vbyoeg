@@ -23,7 +23,6 @@ const Hero = () => {
   }, []);
 
   const parallax = (base = 0, intensity = 20) => {
-    // mild parallax on scroll for content block
     const offset = Math.min(scrollY, 200) / 200; // 0..1
     return `translateY(${base + -offset * intensity}px)`;
   };
@@ -36,11 +35,11 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-[95vh] w-full overflow-hidden bg-black text-white">
-      {/* Spline 3D scene */}
+    <section id="home" className="relative min-h-[95vh] w-full overflow-hidden bg-black text-white pb-24">
+      {/* Spline 3D scene as full-width cover */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/wwTRdG1D9CkNs368/scene.splinecode"
+          scene="https://prod.spline.design/Gt5HUob8aGDxOUep/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
