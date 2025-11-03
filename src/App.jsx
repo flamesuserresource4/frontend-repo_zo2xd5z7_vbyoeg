@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from './components/Hero';
+import TechSeparator from './components/TechSeparator';
 import About from './components/About';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
@@ -27,6 +28,7 @@ function App() {
 
       <main>
         <Hero />
+        <TechSeparator />
         <About />
         <Experience />
         <Contact />
